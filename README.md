@@ -12,15 +12,15 @@ Tombol Interaktif: Setiap kartu punya tombol + Tambah dan - Kurangi untuk mengub
 
 Tombol Reset: Untuk mengembalikan semua angka ke nilai awal.
 
-Secara teknis, proyek ini dibangun dengan:
+## :rocket: Secara teknis, proyek ini dibangun dengan:
 
-React.js: "Pondasi" utama untuk membangun tampilan web.
+### `React.js:` "Pondasi" utama untuk membangun tampilan web.
 
-useReducer: Alat canggih dari React untuk mengelola data yang agak rumit.
+### `useReducer:` Alat canggih dari React untuk mengelola data yang agak rumit.
 
-Tailwind CSS: "Cat" dan "peralatan desain" untuk membuat tampilan jadi bagus dan responsif.
+### `Tailwind CSS:` "Cat" dan "peralatan desain" untuk membuat tampilan jadi bagus dan responsif.
 
-Lucide-React: "Kumpulan gambar" atau ikon-ikon yang kita pakai di setiap kartu.
+### `Lucide-React:` "Kumpulan gambar" atau ikon-ikon yang kita pakai di setiap kartu.
 
 ## :camera: Screenshots:
 
