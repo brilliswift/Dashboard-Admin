@@ -29,8 +29,8 @@ Jika Anda ingin mencoba proyek ini di komputer Anda, ikuti langkah-langkah mudah
 1. Ambil Kodenya
 Pertama, salin kode proyek ini dari internet ke komputer Anda.
 
-### `git clone <URL_REPOSITORI_ANDA>
-cd <NAMA_FOLDER_PROYEK>`
+### `git clone <URL_REPOSITORI_ANDA>`
+### `cd <NAMA_FOLDER_PROYEK>`
 
 2. Pasang Alat-alat yang Dibutuhkan
 Setelah kodenya ada, kita perlu menginstal "alat-alat" (atau dependensi) yang dibutuhkan.
