@@ -22,6 +22,13 @@ Tombol Reset: Untuk mengembalikan semua angka ke nilai awal.
 
 ### `Lucide-React:` "Kumpulan gambar" atau ikon-ikon yang kita pakai di setiap kartu.
 
+## :gear: Cara Menjalankan Proyek
+
+Jika Anda ingin mencoba proyek ini di komputer Anda, ikuti langkah-langkah mudah ini:
+
+1. Ambil Kodenya
+Pertama, salin kode proyek ini dari internet ke komputer Anda.
+
 ## :camera: Screenshots:
 
 ![Modern UI/UX](https://user-images.githubusercontent.com/71302066/191179077-5db352ce-afd1-4841-a520-4e0ad58a56ea.png "Modern UI/UX")
