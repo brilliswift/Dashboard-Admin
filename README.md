@@ -1,31 +1,26 @@
-# HooBank - The Next Generation Bank App
+# Proyek - Dashboard Admin Sederhana
 
-![The Next Generation Bank App using React JS](https://user-images.githubusercontent.com/71302066/190868671-60364882-1cdb-4146-8f08-225acd455ee9.png "The Next Generation Bank App using React JS")
 
-[![Ask Me Anything!](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://github.com/Technical-Shubham-tech "Ask Me Anything!")
-[![GitHub license](https://img.shields.io/github/license/Technical-Shubham-tech/bank-modern-app?)](https://github.com/Technical-Shubham-tech/bank-modern-app/blob/main/LICENSE.md "GitHub license")
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/Technical-Shubham-tech/bank-modern-app/commits/main "Maintenance")
-[![GitHub branches](https://badgen.net/github/branches/Technical-Shubham-tech/bank-modern-app)](https://github.com/Technical-Shubham-tech/bank-modern-app/branches "GitHub branches")
-[![Github commits](https://badgen.net/github/commits/Technical-Shubham-tech/bank-modern-app/main)](https://github.com/Technical-Shubham-tech/bank-modern-app/commits "Github commits")
-[![Netlify Status](https://api.netlify.com/api/v1/badges/fb4ec1c6-7cbb-45ae-95e7-0c7f9c1a80ed/deploy-status)](https://banking-web.netlify.app/ "Netlify Status")
-[![GitHub issues](https://img.shields.io/github/issues/Technical-Shubham-tech/bank-modern-app)](https://github.com/Technical-Shubham-tech/bank-modern-app/issues "GitHub issues")
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/Technical-Shubham-tech/bank-modern-app)](https://github.com/Technical-Shubham-tech/bank-modern-app/pulls "GitHub pull requests")
 
-## :warning: Before you start
+## :pushpin: Apa Saja yang Ada di Proyek Ini?
 
-1. Make sure [Git](https://git-scm.com "Git") and [NodeJS](https://nodejs.org "NodeJS") are installed
-2. **Yarn** is faster than Npm. So use [Yarn](https://classic.yarnpkg.com/lang/en/docs/install/ "Yarn").
-3. You are ready to go :fire:.
+Secara visual, dashboard ini memiliki:
 
-**Note:** This app was created with [Vite](https://vitejs.dev "Vite").
+4 Kartu Statistik: Setiap kartu menunjukkan satu data penting (misalnya, Total Pengguna).
 
-## :pushpin: How to use this App?
+Tombol Interaktif: Setiap kartu punya tombol + Tambah dan - Kurangi untuk mengubah angka.
 
-1. Clone this **repository** to your local computer.
-2. Open **terminal** in root directory.
-3. Type and Run `npm install` or `yarn install`.
-4. Once packages are installed, you can start this app using `npm run dev` or `yarn run dev`.
-5. Now app is fully configured and you can start using this app :+1:.
+Tombol Reset: Untuk mengembalikan semua angka ke nilai awal.
+
+Secara teknis, proyek ini dibangun dengan:
+
+React.js: "Pondasi" utama untuk membangun tampilan web.
+
+useReducer: Alat canggih dari React untuk mengelola data yang agak rumit.
+
+Tailwind CSS: "Cat" dan "peralatan desain" untuk membuat tampilan jadi bagus dan responsif.
+
+Lucide-React: "Kumpulan gambar" atau ikon-ikon yang kita pakai di setiap kartu.
 
 ## :camera: Screenshots:
 
