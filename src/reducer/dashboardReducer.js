@@ -1,11 +1,11 @@
 import { DASHBOARD_ACTIONS, INITIAL_DASHBOARD_STATE, BUSINESS_CONSTANTS } from '../constants';
 
-// Helper functions untuk cleaner code
+
 const increaseValue = (currentValue, increment = 1) => currentValue + increment;
 const decreaseValue = (currentValue, decrement = 1, min = BUSINESS_CONSTANTS.MIN_VALUE) => 
   currentValue > min ? currentValue - decrement : min;
 
-// Reducer function - menentukan bagaimana state berubah berdasarkan action
+
 export const dashboardReducer = (state, action) => {
   switch (action.type) {
     case DASHBOARD_ACTIONS.ADD_USER:
@@ -53,3 +53,4 @@ export const dashboardReducer = (state, action) => {
       return state;
   }
 };
+
