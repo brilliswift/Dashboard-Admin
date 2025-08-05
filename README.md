@@ -40,7 +40,7 @@ Setelah kodenya ada, kita perlu menginstal "alat-alat" (atau dependensi) yang di
 3. Mulai Proyeknya
 Sekarang, kita bisa menjalankan proyeknya!
 
-### `npm start`
+### `npm run dev`
 
 Sekarang, buka browser Anda dan kunjungi alamat contoh : http://localhost:3000. Anda akan melihat dashboard admin berjalan.
 
