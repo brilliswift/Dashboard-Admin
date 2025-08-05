@@ -1,48 +1,54 @@
-// State awal untuk dashboard
-export const initialState = {
-  totalUsers: 150,
-  totalOrders: 45,
-  totalRevenue: 12500,
-  totalProducts: 28
-};
+import { DASHBOARD_ACTIONS, INITIAL_DASHBOARD_STATE, BUSINESS_CONSTANTS } from '../constants';
+
+// Helper functions untuk cleaner code
+const increaseValue = (currentValue, increment = 1) => currentValue + increment;
+const decreaseValue = (currentValue, decrement = 1, min = BUSINESS_CONSTANTS.MIN_VALUE) => 
+  currentValue > min ? currentValue - decrement : min;
 
 // Reducer function - menentukan bagaimana state berubah berdasarkan action
 export const dashboardReducer = (state, action) => {
   switch (action.type) {
-    case 'ADD_USER':
+    case DASHBOARD_ACTIONS.ADD_USER:
       return {
         ...state,
-        totalUsers: state.totalUsers + 1
+        totalUsers: increaseValue(state.totalUsers)
       };
-    case 'REMOVE_USER':
+
+    case DASHBOARD_ACTIONS.REMOVE_USER:
       return {
         ...state,
-        totalUsers: state.totalUsers > 0 ? state.totalUsers - 1 : 0
+        totalUsers: decreaseValue(state.totalUsers)
       };
-    case 'ADD_ORDER':
+
+    case DASHBOARD_ACTIONS.ADD_ORDER:
       return {
         ...state,
-        totalOrders: state.totalOrders + 1,
-        totalRevenue: state.totalRevenue + 250 // setiap order +250
+        totalOrders: increaseValue(state.totalOrders),
+        totalRevenue: increaseValue(state.totalRevenue, BUSINESS_CONSTANTS.ORDER_VALUE)
       };
-    case 'REMOVE_ORDER':
+
+    case DASHBOARD_ACTIONS.REMOVE_ORDER:
       return {
         ...state,
-        totalOrders: state.totalOrders > 0 ? state.totalOrders - 1 : 0,
-        totalRevenue: state.totalRevenue > 250 ? state.totalRevenue - 250 : 0
+        totalOrders: decreaseValue(state.totalOrders),
+        totalRevenue: decreaseValue(state.totalRevenue, BUSINESS_CONSTANTS.ORDER_VALUE)
       };
-    case 'ADD_PRODUCT':
+
+    case DASHBOARD_ACTIONS.ADD_PRODUCT:
       return {
         ...state,
-        totalProducts: state.totalProducts + 1
+        totalProducts: increaseValue(state.totalProducts)
       };
-    case 'REMOVE_PRODUCT':
+
+    case DASHBOARD_ACTIONS.REMOVE_PRODUCT:
       return {
         ...state,
-        totalProducts: state.totalProducts > 0 ? state.totalProducts - 1 : 0
+        totalProducts: decreaseValue(state.totalProducts)
       };
-    case 'RESET_DATA':
-      return initialState;
+
+    case DASHBOARD_ACTIONS.RESET_DATA:
+      return INITIAL_DASHBOARD_STATE;
+
     default:
       return state;
   }
