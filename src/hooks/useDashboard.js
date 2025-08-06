@@ -1,6 +1,6 @@
 import { useReducer } from 'react';
-import { dashboardReducer } from '../reducers/dashboardReducer';
-import { INITIAL_DASHBOARD_STATE, DASHBOARD_ACTIONS } from '../constants/dashboardConstants';
+import { dashboardReducer } from '../reducer/dashboardReducer';
+import { INITIAL_DASHBOARD_STATE, DASHBOARD_ACTIONS } from '../constants';
 
 export const useDashboard = () => {
   const [state, dispatch] = useReducer(dashboardReducer, INITIAL_DASHBOARD_STATE);
